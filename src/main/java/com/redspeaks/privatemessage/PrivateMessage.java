@@ -1,6 +1,8 @@
 package com.redspeaks.privatemessage;
 
 import com.google.common.io.ByteStreams;
+import com.redspeaks.privatemessage.commands.CommandReply;
+import com.redspeaks.privatemessage.commands.CommandWhisper;
 import net.md_5.bungee.api.plugin.Plugin;
 import net.md_5.bungee.config.Configuration;
 import net.md_5.bungee.config.ConfigurationProvider;
@@ -20,6 +22,10 @@ public final class PrivateMessage extends Plugin {
 
         // setup config
         saveDefaultConfig();
+
+        // register commands
+        new CommandWhisper(this);
+        new CommandReply(this);
     }
 
     @Override
