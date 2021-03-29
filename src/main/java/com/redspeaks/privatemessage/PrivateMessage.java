@@ -9,6 +9,7 @@ import net.md_5.bungee.config.ConfigurationProvider;
 import net.md_5.bungee.config.YamlConfiguration;
 import java.io.*;
 import java.util.HashMap;
+import java.util.logging.Level;
 
 public final class PrivateMessage extends Plugin {
 
@@ -50,7 +51,7 @@ public final class PrivateMessage extends Plugin {
 
 
         }catch (IOException e) {
-            e.printStackTrace();
+            getLogger().log(Level.SEVERE, "Could not load config.yml");
         }
     }
 
