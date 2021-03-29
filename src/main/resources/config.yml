@@ -1,0 +1,10 @@
+# This is the message for the one who sent the message
+# {player} - sender
+# {recipient} - recipient
+# {recipient_dn} - recipient displayname
+# {message} - for the message sent
+
+Sender: '&6me -> [&2{player}&6]: &r{message}'
+
+
+Recipient: '&6[&2{player}&6] -> me: &r{message}'

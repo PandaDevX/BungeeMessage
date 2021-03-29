@@ -1,0 +1,3 @@
+name: PrivateMessage
+version: ${project.version}
+main: com.redspeaks.privatemessage.PrivateMessage
