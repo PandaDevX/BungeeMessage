@@ -2,20 +2,15 @@ package com.redspeaks.privatemessage.commands;
 
 import com.redspeaks.privatemessage.PrivateMessage;
 import com.redspeaks.privatemessage.util.Utility;
-import net.md_5.bungee.Util;
 import net.md_5.bungee.api.CommandSender;
-import net.md_5.bungee.api.chat.TextComponent;
 import net.md_5.bungee.api.connection.ProxiedPlayer;
 import net.md_5.bungee.api.plugin.Command;
-import net.md_5.bungee.api.plugin.Plugin;
-
-import java.util.Locale;
 
 public class CommandWhisper extends Command {
     private PrivateMessage plugin;
 
     public CommandWhisper(PrivateMessage plugin) {
-        super("whisper", "pm.whisper", "w", "msg", "tell");
+        super("whisper", "pm.whisper", "w", "msg", "tell", "message");
 
         this.plugin = plugin;
         plugin.getProxy().getPluginManager().registerCommand(plugin, this);
